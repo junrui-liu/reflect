@@ -1,0 +1,10 @@
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
+
+(library
+ (name reflect)
+ (libraries base fmt logs logs.fmt)
+ (preprocess
+  (pps ppx_jane)))
